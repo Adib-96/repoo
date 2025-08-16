@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-primary">
+    <div class="container mx-auto px-4 py-4">
+      <!-- Header -->
+      <header class="flex justify-between items-center p-4">
+        <h1 class="text-white cursor-pointer font-OleoScript text-4xl">Adib</h1>
+        <nav class="hidden md:block">
+          <ul
+            class="flex md:gap-4 xl:gap-10 text-grey font-Montserrat font-medium text-base cursor-pointer"
+          >
+            <li class="md:px-2"><a href="#home">Home</a></li>
+            <li class="md:px-2"><a href="#about">About</a></li>
+            <li class="md:px-2"><a href="#projects">Projects</a></li>
+            <li class="md:px-2"><a href="#services">Services</a></li>
+          </ul>
+        </nav>
+
+        <div class="hidden md:flex md:gap-10 xl:gap-20 items-center">
+          <button
+            class="text-white border py-2 px-3 rounded-lg font-Montserrat cursor-pointer border-brd-blue"
+          >
+            Contact Me
+          </button>
+          <img src="src/assets/light.svg" alt="" class="cursor-pointer" />
+        </div>
+        <!-- mobile navigation -->
+        <nav class="md:hidden relative cursor-pointer">
+          <button id="menu" class="cursor-pointer">
+            <img src="src/assets/menus.png" alt="" class="w-10" />
+          </button>
+          <div
+            class="hidden absolute w-40 h-screen right-0 border-white border-l bg-primary z-10"
+            id="mobile-menu"
+          >
+            <ul
+              class="flex flex-col gap-8 text-grey font-Montserrat mt-20 text-center"
+            >
+              <li class="px-2 hover:text-brd-blue transition duration-500">
+                <a href="#home">Home</a>
+              </li>
+              <li class="px-2 hover:text-brd-blue transition duration-500">
+                <a href="#about">About</a>
+              </li>
+              <li class="px-2 hover:text-brd-blue transition duration-500">
+                <a href="#projects">Projects</a>
+              </li>
+              <li class="px-2 hover:text-brd-blue transition duration-500">
+                <a href="#services">Services</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- hero section -->
+      <div
+        class="bg-[url('/src/assets/bg.png')] bg-cover bg-center bg-no-repeat"
+      >
+        <div
+          class="flex flex-col items-center justify-center text-center mt-10 md:mt-20"
+        >
+          <div>
+            <img src="src/assets/avatar.png" alt="" />
+          </div>
+          <h1 class="font-Poppins text-[63px] font-bold text-white mt-3">
+            Adib Bh
+          </h1>
+          <div>
+            <h3
+              class="font-Poppins text-[26px] font-semibold bg-gradient-to-r from-brd-blue to-white bg-clip-text text-transparent"
+            >
+              Full Stack Developer
+            </h3>
+          </div>
+          <p class="font-Poppins font-medium text-[19px] text-white mt-5 mb-10">
+            I am a full-stack developer passionate about building innovative web
+            applications. I specialize in creating dynamic front-end experiences
+            and reliable back-end systems, with a focus on clean code and
+            impactful solutions.
+          </p>
+          <button
+            class="font-Montserrat font-medium text-base border rounded-4xl border-brd-blue px-10 py-4 text-white cursor-pointer"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+
+      <!-- about section -->
+      <div
+        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60"
+      >
+        <h1 class="font-Inter text-[45px] font-extrabold text-white mt-3">
+          About Me
+        </h1>
+        <div>
+          <h3
+            class="font-Inter text-[14px] font-semibold bg-gradient-to-r from-brd-blue to-white bg-clip-text text-transparent"
+          >
+            Get to know me
+          </h3>
+        </div>
+        <div>
+          <p class="font-Inter font-medium text-[17px] text-white mt-8 mb-8">
+            Hi there! I'm Adib Bh, a full-stack developer specializing in
+            building scalable, user-friendly, and high-performing web
+            applications. With expertise across both front-end and back-end
+            technologies, I’m passionate about creating seamless digital
+            experiences that bridge design and functionality.
+          </p>
+          <p class="font-Inter font-medium text-[17px] text-white mt-5 mb-8">
+            From crafting intuitive user interfaces to developing robust
+            server-side logic, I bring a mix of technical skills,
+            problem-solving ability, and clear communication to every project.
+            Whether it’s designing responsive websites, optimizing performance,
+            or integrating complex systems, I’m dedicated to delivering
+            solutions that truly meet business and user needs.
+          </p>
+          <p class="font-Inter font-medium text-[17px] text-white mt-5 mb-8">
+            Let’s work together to turn your ideas into powerful, real-world
+            applications. Get in touch, and let’s start building something
+            great!
+          </p>
+        </div>
+        <button
+          class="font-Montserrat font-medium text-base border rounded-4xl border-brd-blue px-10 py-4 text-white cursor-pointer"
+        >
+          Download Resume
+        </button>
+      </div>
+
+      <!-- services -->
+      <div
+        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60"
+      >
+        <h1 class="font-Inter text-[45px] font-extrabold text-white mt-3">
+          What I do
+        </h1>
+        <div>
+          <h3
+            class="font-Inter text-[14px] font-semibold bg-gradient-to-r from-brd-blue to-white bg-clip-text text-transparent"
+          >
+            My Services
+          </h3>
+        </div>
+        <!--* services list -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- !Front-End Development -->
+          <div
+            class="border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md flex flex-col items-start bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten"
+          >
+            <div class="p-1">
+              <div class="w-[44px] h-[44px] rounded-md bg-white relative my-5">
+                <img
+                  src="src/assets/ui-ux.png"
+                  alt=""
+                  class="w-6 absolute inset-0 m-auto"
+                />
+              </div>
+              <h4
+                class="font-Inter font-semibold text-[15px] text-white text-left mb-3"
+              >
+                Front-End Development
+              </h4>
+              <p
+                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+              >
+                I create responsive and visually appealing user interfaces using
+                modern web technologies. I deliver seamless user experiences
+                through clean design, intuitive navigation, and high
+                performance. I leverage frameworks, optimize for multiple
+                devices, and ensure accessibility and scalability. I turn
+                complex requirements into elegant, functional, and user-friendly
+                digital solutions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md flex flex-col items-start bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten"
+          >
+            <div class="p-1">
+              <div class="w-[44px] h-[44px] rounded-md bg-white relative my-5">
+                <img
+                  src="src/assets/api-cloud.png"
+                  alt=""
+                  class="w-6 absolute inset-0 m-auto"
+                />
+              </div>
+              <h4
+                class="font-Inter font-semibold text-[15px] text-white text-left mb-3"
+              >
+                Backend Development
+              </h4>
+              <p
+                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+              >
+                I design and implement robust backend systems using modern
+                technologies and frameworks. I build scalable, efficient, and
+                secure APIs to support seamless application performance. I
+                optimize databases, handle data modeling, and ensure high
+                reliability and maintainability. I turn complex business
+                requirements into clean, functional, and well-structured backend
+                solutions.
+              </p>
+            </div>
+          </div>
+          <div
+            class="border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md flex flex-col items-start bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten"
+          >
+            <div class="p-1">
+              <div class="w-[44px] h-[44px] rounded-md bg-white relative my-5">
+                <img
+                  src="src/assets/database-management.png"
+                  alt=""
+                  class="w-6 absolute inset-0 m-auto"
+                />
+              </div>
+              <h4
+                class="font-Inter font-semibold text-[15px] text-white text-left mb-3"
+              >
+                Database Management
+              </h4>
+              <p
+                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+              >
+                I design, implement, and maintain efficient database systems to
+                support application needs. I optimize queries, ensure data
+                integrity, and manage large-scale datasets effectively. I handle
+                schema design, indexing, and performance tuning for high
+                reliability. I turn complex data requirements into organized,
+                secure, and scalable database solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- !!!!!!!!!!!!!!!!!! -->
+          <div
+            class="md:col-span-2 border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md md:flex bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten justify-between"
+          >
+            <div class="p-1 flex flex-col items-start md:w-1/2">
+              <div class="w-[44px] h-[44px] rounded-md bg-white relative my-5">
+                <img
+                  src="src/assets/it-alt.png"
+                  alt=""
+                  class="w-6 absolute inset-0 m-auto"
+                />
+              </div>
+              <h4
+                class="font-Inter font-semibold text-[15px] text-white text-left mb-3"
+              >
+                Maintenance & Optimization
+              </h4>
+              <p
+                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+              >
+                I maintain and optimize systems to ensure high performance and
+                reliability. I monitor applications, identify bottlenecks, and
+                implement efficient solutions. I improve code, databases, and
+                infrastructure for scalability and stability. I turn complex
+                system challenges into streamlined, well-performing solutions.
+              </p>
+            </div>
+            <div class="flex w-1/2 justify-center">
+              <img src="src/assets/techImg.png" alt="" />
+            </div>
+          </div>
+          <!-- !!!!!!!!!!!!!!!!!! -->
+          <div
+            class="border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md flex flex-col items-start bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten"
+          >
+            <div class="p-1">
+              <div class="w-[44px] h-[44px] rounded-md bg-white relative my-5">
+                <img
+                  src="src/assets/drafting-compass.png"
+                  alt=""
+                  class="w-6 absolute inset-0 m-auto"
+                />
+              </div>
+              <h4
+                class="font-Inter font-semibold text-[15px] text-white text-left mb-3"
+              >
+                Consulting & Architecture Design
+              </h4>
+              <p
+                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+              >
+                I provide expert consulting to design scalable and efficient
+                system architectures. I analyze requirements and propose robust
+                technical solutions tailored to business needs. I guide
+                implementation strategies, ensuring maintainability,
+                performance, and security. I transform complex challenges into
+                well-structured, reliable, and future-proof designs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
