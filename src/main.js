@@ -1,6 +1,7 @@
 const btn_menu = document.getElementById("menu");
 const navMenu = btn_menu.nextElementSibling; // the div with the ul inside
 const icon = btn_menu.querySelector("img");
+const download_resume = document.getElementById("download_resume");
 
 btn_menu.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevent menu from closing immediately
@@ -31,4 +32,18 @@ document.addEventListener("keydown", (e) => {
     navMenu.classList.add("hidden");
     icon.src = "src/assets/menus.png"; // reset icon
   }
+});
+
+
+
+download_resume.addEventListener("click", (e) => {
+  e.preventDefault();
+  // Logic to download the resume
+  const link = document.createElement("a");
+  link.href = "src/assets/fullstack_resume.pdf";
+  link.download = "fullstack_resume.pdf";
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 });
