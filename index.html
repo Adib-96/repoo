@@ -62,7 +62,7 @@
 
       <!-- hero section -->
       <div
-        class="bg-[url('/src/assets/bg.png')] bg-cover bg-center bg-no-repeat"
+        class="bg-[url('/src/assets/bg.png')] bg-cover bg-center bg-no-repeat max-w-6xl mx-auto"
       >
         <div
           class="flex flex-col items-center justify-center text-center mt-10 md:mt-20"
@@ -96,7 +96,7 @@
 
       <!-- about section -->
       <div
-        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60"
+        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60 max-w-6xl mx-auto"
       >
         <h1 class="font-Inter text-[45px] font-extrabold text-white mt-3">
           About Me
@@ -132,6 +132,7 @@
         </div>
         <button
           class="font-Montserrat font-medium text-base border rounded-4xl border-brd-blue px-10 py-4 text-white cursor-pointer"
+          id="download_resume"
         >
           Download Resume
         </button>
@@ -139,7 +140,7 @@
 
       <!-- services -->
       <div
-        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60"
+        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60 max-w-6xl mx-auto"
       >
         <h1 class="font-Inter text-[45px] font-extrabold text-white mt-3">
           What I do
@@ -171,7 +172,7 @@
                 Front-End Development
               </h4>
               <p
-                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+                class="font-Inter font-normal text-[14px] text-services-text mt-2 text-left leading-6"
               >
                 I create responsive and visually appealing user interfaces using
                 modern web technologies. I deliver seamless user experiences
@@ -200,7 +201,7 @@
                 Backend Development
               </h4>
               <p
-                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+                class="font-Inter font-normal text-[14px] text-services-text mt-2 text-left leading-6"
               >
                 I design and implement robust backend systems using modern
                 technologies and frameworks. I build scalable, efficient, and
@@ -229,7 +230,7 @@
                 Database Management
               </h4>
               <p
-                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+                class="font-Inter font-normal text-[14px] text-services-text mt-2 text-left leading-6"
               >
                 I design, implement, and maintain efficient database systems to
                 support application needs. I optimize queries, ensure data
@@ -243,7 +244,7 @@
 
           <!-- !!!!!!!!!!!!!!!!!! -->
           <div
-            class="md:col-span-2 border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md md:flex bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten justify-between"
+            class="md:col-span-2 border border-dark-grey p-4 ring-1 ring-dark-grey ring-inset rounded-md md:flex bg-linear-to-b from-grd-grey via-grd-grey to-grd-black mix-blend-lighten justify-between gap-4"
           >
             <div class="p-1 flex flex-col items-start md:w-1/2">
               <div class="w-[44px] h-[44px] rounded-md bg-white relative my-5">
@@ -254,12 +255,12 @@
                 />
               </div>
               <h4
-                class="font-Inter font-semibold text-[15px] text-white text-left mb-3"
+                class="font-Inter font-semibold text-[15px] md:text-[19.77px] text-white text-left mb-3"
               >
                 Maintenance & Optimization
               </h4>
               <p
-                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+                class="font-Inter font-normal text-[14px] text-services-text mt-2 text-left leading-6"
               >
                 I maintain and optimize systems to ensure high performance and
                 reliability. I monitor applications, identify bottlenecks, and
@@ -268,8 +269,8 @@
                 system challenges into streamlined, well-performing solutions.
               </p>
             </div>
-            <div class="flex w-1/2 justify-center">
-              <img src="src/assets/techImg.png" alt="" />
+            <div class="flex md:w-1/2 justify-center mx-auto mt-10 md:mt-0">
+              <img src="src/assets/techImg.png" alt="" class="w-full h-auto" />
             </div>
           </div>
           <!-- !!!!!!!!!!!!!!!!!! -->
@@ -290,7 +291,7 @@
                 Consulting & Architecture Design
               </h4>
               <p
-                class="font-Inter font-normal text-[14px] text-white mt-2 text-left leading-6"
+                class="font-Inter font-normal text-[14px] text-services-text mt-2 text-left leading-6"
               >
                 I provide expert consulting to design scalable and efficient
                 system architectures. I analyze requirements and propose robust
@@ -303,8 +304,256 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <script type="module" src="./src/main.js"></script>
+      <!-- Projects section -->
+
+      <div
+        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60 max-w-6xl mx-auto"
+      >
+        <h1 class="font-Inter text-[45px] font-extrabold text-white mt-3">
+          Projects
+        </h1>
+        <div>
+          <h3
+            class="font-Inter text-[14px] font-semibold bg-gradient-to-r from-brd-blue to-white bg-clip-text text-transparent"
+          >
+            Some of my Work
+          </h3>
+        </div>
+        <!--* project list -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div>
+            <div class="mb-10">
+              <img src="src/assets/Image.png" alt="" />
+            </div>
+            <h4
+              class="font-Inter font-bold text-[20px] text-grey text-left mb-3"
+            >
+              RoyalLine / website
+            </h4>
+
+            <div class="flex items-center justify-between">
+              <p
+                class="font-Inter font-normal text-[14px] text-tech-text mt-2 text-left leading-6"
+              >
+                Technology used
+              </p>
+              <a href="">
+                <img src="src/assets/send.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div class="mb-10">
+                <img src="src/assets/Image.png" alt="" />
+              </div>
+              <h4
+                class="font-Inter font-bold text-[20px] text-grey text-left mb-3"
+              >
+                Wealthwave / website
+              </h4>
+
+              <div class="flex items-center justify-between">
+                <p
+                  class="font-Inter font-normal text-[14px] text-tech-text mt-2 text-left leading-6"
+                >
+                  Technology used
+                </p>
+                <a href="">
+                  <img src="src/assets/send.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="mb-10">
+              <img src="src/assets/Image.png" alt="" />
+            </div>
+            <h4
+              class="font-Inter font-bold text-[20px] text-grey text-left mb-3"
+            >
+              RoyalLine / website
+            </h4>
+
+            <div class="flex items-center justify-between">
+              <p
+                class="font-Inter font-normal text-[14px] text-tech-text mt-2 text-left leading-6"
+              >
+                Technology used
+              </p>
+              <a href="">
+                <img src="src/assets/send.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="mb-10">
+              <img src="src/assets/Image.png" alt="" />
+            </div>
+            <h4
+              class="font-Inter font-bold text-[20px] text-grey text-left mb-3"
+            >
+              RoyalLine / website
+            </h4>
+
+            <div class="flex items-center justify-between">
+              <p
+                class="font-Inter font-normal text-[14px] text-tech-text mt-2 text-left leading-6"
+              >
+                Technology used
+              </p>
+              <a href="">
+                <img src="src/assets/send.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact form -->
+
+      <div
+        class="flex flex-col items-center justify-center text-center mt-30 md:mt-60 max-w-6xl mx-auto"
+      >
+        <h1 class="font-Inter text-[45px] font-extrabold text-white mt-3">
+          Get In Touch
+        </h1>
+        <div>
+          <h3
+            class="font-Inter text-[14px] font-semibold bg-gradient-to-r from-brd-blue to-white bg-clip-text text-transparent"
+          >
+            Lets work together
+          </h3>
+        </div>
+
+        <!-- contact form -->
+        <div class="w-full md:w-1/2 mt-10">
+          <form id="form_data">
+            <div class="flex flex-col gap-4 mt-10">
+              <input
+              required
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                class="border border-grey p-3 rounded-md text-grey font-Inter font-normal text-[14px] w-full"
+              />
+              <input
+              required
+                name="email"
+                type="email"
+                placeholder="Your Email"
+                class="border border-grey p-3 rounded-md text-grey font-Inter font-normal text-[14px] w-full"
+              />
+
+              <select
+                name="service"
+                id=""
+                class="border border-grey p-3 rounded-md text-grey font-Inter font-normal text-[14px] w-full"
+              >
+                <option>Select a Service</option>
+                <option value="Front-End Development" class="text-black">
+                  Front-End Development
+                </option>
+                <option value="Backend Development" class="text-black">
+                  Backend Development
+                </option>
+                <option value="Database Management" class="text-black">
+                  Database Management
+                </option>
+                <option value="Maintenance & Optimization" class="text-black">
+                  Maintenance & Optimization
+                </option>
+                <option
+                  value="Consulting & Architecture Design"
+                  class="text-black"
+                >
+                  Consulting & Architecture Design
+                </option>
+              </select>
+            </div>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="8"
+              class="border border-grey p-3 rounded-md text-grey font-Inter font-normal text-[14px] w-full mt-4"
+            ></textarea>
+            <button
+              type="submit"
+              class="font-Raleway font-medium text-base border rounded-4xl px-10 py-4 text-black bg-white cursor-pointer mt-6 w-full"
+            >
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Before footer -->
+      <div
+        class="flex justify-between items-center text-center mt-30 md:mt-40 max-w-6xl mx-auto"
+      >
+        <div class="flex flex-col items-start">
+          <span class="font-Inter text-[63px] font-medium text-white mt-3"> Let’s </span>
+          <h1 class="font-Inter text-[63px] font-medium text-white ">
+            Work Together -
+          </h1>
+        </div>
+
+        <div
+          class="flex items-center justify-center cursor-pointer px-3 border gap-4 rounded-2xl border-border-footer h-12 hover:bg-indigo-500 transition duration-500"
+        >
+          <button class="font-normal rounded-2xl">
+            <img src="src/assets/gmail.png" alt="" class="w-6" />
+          </button>
+          <p class="text-white m-0 font-Inter font-normal">adibbh1996@gmail.com</p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <hr class="border-grey mt-8 w-full" />
+
+
+
+
+    <div class="container mx-auto px-4 py-4 my-4">
+      <div class="flex justify-between items-center max-w-6xl mx-auto">
+        <p class="text-grey font-Inter font-normal text-[14px]">
+          © 2023 All rights reserved.
+        </p>
+
+        <div class="flex gap-4">
+          <img src="src/assets/fb.png" alt="">
+          <img src="src/assets/x.png" alt="">
+          <img src="src/assets/linkedin (2).png" alt="">
+          <img src="src/assets/insta.png" alt="">
+          <img src="src/assets/sd.png" alt="">
+        </div>
+      </div>
+      
+    </div>
+    <script type="module" src="./src/main.js" defer></script>
+    <script type="module" src="./src/form.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "URFx9MXTyMvtElRDs",
+      });
+   })();
+</script>
   </body>
 </html>
