@@ -1,6 +1,11 @@
 const form = document.getElementById("form_data");
+const submit_btn = document.querySelector("button[type='submit']");
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  submit_btn.disabled = true;
+  submit_btn.textContent = "Sending...";
+
   const formData = new FormData(form);
 
   const data = Object.fromEntries(formData);
@@ -14,12 +19,14 @@ form.addEventListener("submit", (event) => {
   })
     .then((response) => {
         
-        // Handle successful response
-        form.reset(); // Reset the form after successful submission
+        form.reset(); 
+        submit_btn.disabled = false;
+        submit_btn.textContent = "Get in Touch";
       console.log("Email sent successfully:", response);
     })
     .catch((error) => {
-        // Handle error response AND make a toast notification
+      submit_btn.disabled = false;
+      submit_btn.textContent = "Get in Touch";
       console.error("Error sending email:", error);
     });
 
