@@ -7,8 +7,12 @@ const contact_me_hero = document.getElementById("contact_me_hero");
 const contact = [contact_me, contact_me_hero];
 const themeButton = document.getElementById("theme");
 const menuLinksMobile = navMenu.querySelectorAll("a[aria-label]");
-console.log(menuLinksMobile);
 
+
+
+
+
+// !Mobile
 menuLinksMobile.forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.add('hidden');
@@ -22,7 +26,7 @@ menuLinksMobile.forEach(link => {
 btn_menu.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevent menu from closing immediately
   navMenu.classList.toggle("hidden");
-  navMenu.classList.add("fixed", "inset-0", "w-full", "h-full", "bg-primary", "z-10", "flex", "flex-col", "items-center", "justify-center");
+  navMenu.classList.add("fixed", "inset-0", "bg-primary", "z-10", "flex", "flex-col", "items-center", "justify-center");
   document.body.style.overflow = navMenu.classList.contains("hidden") ? "auto" : "hidden";
 
   icon.src = navMenu.classList.contains("hidden")
