@@ -25,5 +25,18 @@
   --color-services-text: #E1E1E1;
   --color-tech-text: #A9A9A9;
   --color-border-footer: #484E53;
+  /* Light mode */
+  --color-light-bg: #E0E8F6;
+  --color-nav-a: #050505;
+  --color-contact-btn :#484E53;
+  --color-logo-text: #000000;
+  --color-paragraph-text : #1C1E53;
+  --color-service-icon-bg : #BCE7FA;
+  --color-placeholder-text: #8987A1;
+  --color-let-work-together :#282938;
+}
 
+
+body[data-theme="light"] {
+  background-color: #E0E8F6;
 }
