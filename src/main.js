@@ -31,7 +31,7 @@ btn_menu.addEventListener("click", (e) => {
 
   icon.src = navMenu.classList.contains("hidden")
     ? "src/assets/menus.png" // closed
-    : "src/assets/close.png"; // open
+    : "/close.png"; // open
 });
 
 
