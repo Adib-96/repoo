@@ -17,7 +17,7 @@ menuLinksMobile.forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.add('hidden');
     document.body.style.overflow = ''; // restore page scroll
-    icon.src = "src/assets/menus.png"; // reset icon
+    icon.src = "/menus.png"; // reset icon
   });
 });
 
@@ -43,14 +43,14 @@ document.addEventListener("click", (e) => {
     !btn_menu.contains(e.target) // covers icon clicks too
   ) {
     navMenu.classList.add("hidden");
-    icon.src = "src/assets/menus.png"; // reset icon
+    icon.src = "/menus.png"; // reset icon
   }
 });
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && !navMenu.classList.contains("hidden")) {
     navMenu.classList.add("hidden");
-    icon.src = "src/assets/menus.png"; // reset icon
+    icon.src = "/menus.png"; // reset icon
   }
 });
 
