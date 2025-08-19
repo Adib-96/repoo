@@ -35,29 +35,30 @@
         </div>
         <!-- mobile navigation -->
         <nav class="md:hidden cursor-pointer">
-          <button id="menu" class="cursor-pointer">
-            <img src="src/assets/menus.png" alt="" class="w-10" />
+          <button id="menu" class="cursor-pointer z-20 relative">
+            <img src="src/assets/menus.png" alt="men" class="w-10" />
           </button>
           <div
-            class="hidden  absolute w-full h-full right-0 top-20 bg-primary z-10"
+            class="hidden inset-0 w-full h-full bg-primary z-10"
             id="mobile-menu"
           >
+
             <ul
               class="flex flex-col gap-14 text-grey font-Montserrat mt-20 text-center"
             >
               <li class="px-2 hover:text-brd-blue transition duration-500 text-2xl">
-                <a href="#home">Home</a>
+                <a href="#home" aria-label="Home">Home</a>
               </li>
               <li class="px-2 hover:text-brd-blue transition duration-500 text-2xl">
-                <a href="#about">About</a>
+                <a href="#about" aria-label="About">About</a>
               </li>
          
               <li class="px-2 hover:text-brd-blue transition duration-500 text-2xl">
-                <a href="#services">Services</a>
+                <a href="#services" aria-label="Services">Services</a>
               </li>
 
-                   <li class="px-2 hover:text-brd-blue transition duration-500 text-2xl">
-                <a href="#projects">Projects</a>
+              <li class="px-2 hover:text-brd-blue transition duration-500 text-2xl">
+                <a href="#projects" aria-label="Projects">Projects</a>
               </li>
             </ul>
           </div>

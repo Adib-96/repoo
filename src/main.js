@@ -6,18 +6,31 @@ const contact_me = document.getElementById("contact_me");
 const contact_me_hero = document.getElementById("contact_me_hero");
 const contact = [contact_me, contact_me_hero];
 const themeButton = document.getElementById("theme");
+const menuLinksMobile = navMenu.querySelectorAll("a[aria-label]");
+console.log(menuLinksMobile);
 
+menuLinksMobile.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.add('hidden');
+    document.body.style.overflow = ''; // restore page scroll
+    icon.src = "src/assets/menus.png"; // reset icon
+  });
+});
+
+
+//menu handler
 btn_menu.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevent menu from closing immediately
   navMenu.classList.toggle("hidden");
+  navMenu.classList.add("fixed", "inset-0", "w-full", "h-full", "bg-primary", "z-10", "flex", "flex-col", "items-center", "justify-center");
+  document.body.style.overflow = navMenu.classList.contains("hidden") ? "auto" : "hidden";
 
-  // Change icon depending on menu state
   icon.src = navMenu.classList.contains("hidden")
     ? "src/assets/menus.png" // closed
     : "src/assets/close.png"; // open
 });
 
-// Close menu when clicking outside
+
 document.addEventListener("click", (e) => {
   if (
     !navMenu.classList.contains("hidden") &&
@@ -30,7 +43,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Close menu when pressing Escape
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && !navMenu.classList.contains("hidden")) {
     navMenu.classList.add("hidden");
@@ -39,7 +51,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 
-
+//resume download
 download_resume.addEventListener("click", (e) => {
   e.preventDefault();
   // Logic to download the resume
@@ -54,16 +66,9 @@ download_resume.addEventListener("click", (e) => {
 
 
 // assign event to both buttons
-contact.map((btn) => {
+contact.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
     document.getElementById('get_in_touch').scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-
-
-themeButton.addEventListener("click", (e) => {
-  document.body.classList.toggle("dark-theme");
-  
-})
