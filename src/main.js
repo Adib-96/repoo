@@ -5,8 +5,7 @@ const download_resume = document.getElementById("download_resume");
 const contact_me = document.getElementById("contact_me");
 const contact_me_hero = document.getElementById("contact_me_hero");
 const contact = [contact_me, contact_me_hero];
-
-
+const themeButton = document.getElementById("theme");
 
 btn_menu.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevent menu from closing immediately
@@ -64,3 +63,7 @@ contact.map((btn) => {
 
 
 
+themeButton.addEventListener("click", (e) => {
+  document.body.classList.toggle("dark-theme");
+  
+})
