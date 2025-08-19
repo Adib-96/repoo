@@ -30,7 +30,7 @@ btn_menu.addEventListener("click", (e) => {
   document.body.style.overflow = navMenu.classList.contains("hidden") ? "auto" : "hidden";
 
   icon.src = navMenu.classList.contains("hidden")
-    ? "src/assets/menus.png" // closed
+    ? "/menus.png" // closed
     : "/close.png"; // open
 });
 
