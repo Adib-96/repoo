@@ -76,3 +76,18 @@ contact.forEach((btn) => {
     document.getElementById('get_in_touch').scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+// add observer
+
+const hero_section = document.querySelector('.hero');
+console.log(hero_section);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  })
+})
+
+observer.observe(hero_section);
