@@ -80,7 +80,6 @@ contact.forEach((btn) => {
 // add observer
 
 const hero_section = document.querySelector('.hero');
-console.log(hero_section);
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
