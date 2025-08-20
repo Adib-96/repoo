@@ -6,7 +6,9 @@
 @import "tailwindcss";
 
 
-
+body {
+  overflow-x: hidden;
+}
 
 
 @theme {
@@ -25,6 +27,8 @@
   --color-services-text: #E1E1E1;
   --color-tech-text: #A9A9A9;
   --color-border-footer: #484E53;
+
+
   /* Light mode */
   --color-light-bg: #E0E8F6;
   --color-nav-a: #050505;
@@ -48,13 +52,11 @@ body[data-theme="light"] {
   opacity: 0;
   transform: translateX(0);
   transition: all 0.8s ease-out;
+  max-width: 100%;
 }
 
 .from-left {
   transform: translateX(-100px);
-}
-.from-right {
-  transform: translateX(100px);
 }
 
 .show {
