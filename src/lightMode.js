@@ -11,7 +11,8 @@ const p_hero = hero_section.childNodes[1].childNodes[7];
 const about_section = document.getElementById('about').children;
 const services_section = document.getElementById('services').children;
 const projects_section = document.getElementById('projects').children;
- 
+const get_in_touch = document.getElementById('get_in_touch').children;
+
 
 
 
@@ -139,13 +140,37 @@ Array.from(services_section[2].children).forEach((child) => {
 
     child.children[1].style.color = theme.h1Color;
     child.children[2].children[0].style.color = theme.h1Color;
-
-    
-
   })
 
 
+  // contact me hero section
+  get_in_touch[0].style.color = theme.contactMeHeroHeadColor;
+  get_in_touch[1].children[0].classList.remove("from-brd-blue", "to-white", "from-[#4FC3F7]", "to-[#484E53]");
+  get_in_touch[1].children[0].classList.add(theme.h3From, theme.h3To);
 
 
-  
+  // Array.from(get_in_touch[2].children).forEach((child) => {
+  //   child.style.color = theme.contactMeHeroParagraph;
+  //   child.style.borderColor = theme.contactBorder;
+
+  // });
+
+  get_in_touch[2].children[0].children[0].children[0].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000";
+  get_in_touch[2].children[0].children[0].children[0].style.borderColor = theme.contactColor
+
+  get_in_touch[2].children[0].children[0].children[1].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000";
+  get_in_touch[2].children[0].children[0].children[1].style.borderColor = theme.contactColor
+
+  get_in_touch[2].children[0].children[0].children[2].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000";
+  get_in_touch[2].children[0].children[0].children[2].style.borderColor = theme.contactColor;
+
+
+  get_in_touch[2].children[0].children[1].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000";
+  get_in_touch[2].children[0].children[1].style.borderColor = theme.contactColor;
+
+
+  get_in_touch[2].children[0].children[2].style.backgroundColor = theme.contactColor;
+  get_in_touch[2].children[0].children[2].style.color = theme.bodyTheme === "dark" ? "#000000" : "#FFFFFF";
+
+
 });
