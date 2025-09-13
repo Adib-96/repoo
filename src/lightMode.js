@@ -12,6 +12,12 @@ const about_section = document.getElementById('about').children;
 const services_section = document.getElementById('services').children;
 const projects_section = document.getElementById('projects').children;
 const get_in_touch = document.getElementById('get_in_touch').children;
+const lets_work_together = document.getElementById('lets-work-together').children;
+const my_footer = document.getElementById('my_footer').children;
+console.log(my_footer);
+
+
+
 
 
 
@@ -171,6 +177,21 @@ Array.from(services_section[2].children).forEach((child) => {
 
   get_in_touch[2].children[0].children[2].style.backgroundColor = theme.contactColor;
   get_in_touch[2].children[0].children[2].style.color = theme.bodyTheme === "dark" ? "#000000" : "#FFFFFF";
+//lets_work_together
+
+lets_work_together[0].children[0].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000"
+lets_work_together[0].children[1].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000"
+
+lets_work_together[1].children[1].style.color = theme.bodyTheme === "dark" ? "#FFFFFF" : "#000000"
+
+my_footer[0].style.color = theme.bodyTheme ===  "dark" ? "#FFFFFF" : "#000000"
+my_footer[1].style.filter = theme.bodyTheme === "dark" ? "brightness(1)" : "brightness(0.5)";
+
 
 
 });
+
+
+
+
+
