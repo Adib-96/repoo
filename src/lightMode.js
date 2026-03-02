@@ -14,7 +14,6 @@ const projects_section = document.getElementById('projects').children;
 const get_in_touch = document.getElementById('get_in_touch').children;
 const lets_work_together = document.getElementById('lets-work-together').children;
 const my_footer = document.getElementById('my_footer').children;
-console.log(my_footer);
 
 
 
