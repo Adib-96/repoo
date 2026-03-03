@@ -90,3 +90,21 @@ const observer = new IntersectionObserver((entries) => {
 })
 
 observer.observe(hero_section);
+
+
+const magic_animation = document.querySelectorAll('img.opacity-5');
+console.log(magic_animation);
+
+const $Observer2 = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {   
+      entry.target.classList.remove('opacity-5');  
+      entry.target.classList.add('animate');
+    } 
+  })
+}
+);
+
+magic_animation.forEach(img => {
+  $Observer2.observe(img);
+});
