@@ -60,8 +60,8 @@ download_resume.addEventListener("click", (e) => {
   e.preventDefault();
   // Logic to download the resume
   const link = document.createElement("a");
-  link.href = "/fullstack_resume.pdf";
-  link.download = "fullstack_resume.pdf";
+  link.href = "/final_resume.pdf"; // Path to your resume file
+  link.download = "Full_Stack_Software_Engineer_Resume.pdf";
   
   document.body.appendChild(link);
   link.click();
